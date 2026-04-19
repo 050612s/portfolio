@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & 效率工具 - 定制开发服务</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a1a;--card:#12122a;--primary:#6366f1;--primary2:#818cf8;
+  --text:#e2e8f0;--muted:#94a3b8;--border:#1e1e3f;--success:#10b981;
+  --gold:#f59e0b;
+}
+body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.hero{background:linear-gradient(135deg,#1e1b4b,#312e81);padding:3rem 2rem;text-align:center;border-bottom:1px solid var(--border)}
+.hero h1{font-size:2rem;margin-bottom:0.5rem}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);font-size:1rem;max-width:600px;margin:0 auto 1.5rem}
+.price-tag{background:linear-gradient(135deg,#f59e0b,#f97316);color:#fff;padding:0.5rem 1.5rem;border-radius:50px;display:inline-block;font-weight:700;font-size:0.9rem}
+.container{max-width:900px;margin:0 auto;padding:2rem}
+.section{margin-bottom:2.5rem}
+.section h2{font-size:1.2rem;color:var(--primary2);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+.services{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.svc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.svc h3{font-size:1rem;margin-bottom:0.5rem;color:#fff}
+.svc .price{color:var(--gold);font-size:1.1rem;font-weight:700;margin:0.5rem 0}
+.svc ul{list-style:none;font-size:0.85rem;color:var(--muted)}
+.svc ul li{padding:0.2rem 0}
+.svc ul li::before{content:'✓ ';color:var(--success)}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.8rem}
+.tool{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center}
+.tool .icon{font-size:1.8rem;margin-bottom:0.3rem}
+.tool .name{font-weight:600;font-size:0.9rem}
+.tool .desc{color:var(--muted);font-size:0.75rem;margin-top:0.3rem}
+.contact{background:linear-gradient(135deg,#1e1b4b,#0f172a);border:1px solid var(--primary);border-radius:16px;padding:2rem;text-align:center}
+.contact h2{font-size:1.3rem;margin-bottom:0.5rem}
+.contact p{color:var(--muted);margin-bottom:1.5rem}
+.contact-form{max-width:500px;margin:0 auto}
+.form-group{margin-bottom:0.8rem}
+.form-group input,.form-group textarea{width:100%;padding:0.8rem;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:0.95rem;font-family:inherit}
+.form-group textarea{resize:vertical;min-height:100px}
+.submit{background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;border:none;padding:0.8rem 2rem;border-radius:8px;cursor:pointer;font-size:1rem;font-weight:600;width:100%}
+.submit:hover{opacity:0.9}
+.guarantee{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+.guarantee span{background:var(--bg);border:1px solid var(--border);padding:0.4rem 0.8rem;border-radius:6px;font-size:0.8rem;color:var(--muted)}
+.trust{display:flex;gap:2rem;justify-content:center;margin-top:1rem}
+.trust span{color:var(--success);font-weight:600}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:0.8rem;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>🤖 AI & 效率工具 <span>定制开发</span></h1>
+  <p>数据爬取 · AI 工具 · 自动化脚本 · 机器人开发<br>覆盖全流程，一站式解决你的技术需求</p>
+  <span class="price-tag">首单 8 折 · 满意付款</span>
+</div>
+<div class="container">
+
+<div class="section">
+  <h2>💼 主营业务</h2>
+  <div class="services">
+    <div class="svc">
+      <h3>📊 数据采集</h3>
+      <div class="price">¥ 200 起</div>
+      <ul>
+        <li>微博 / 小红书 / 抖音数据</li>
+        <li>电商平台价格监控</li>
+        <li>竞品数据抓取分析</li>
+        <li>数据清洗整理导出</li>
+      </ul>
+    </div>
+    <div class="svc">
+      <h3>🤖 AI 工具定制</h3>
+      <div class="price">¥ 300 起</div>
+      <ul>
+        <li>翻译 / 总结 / 润色工具</li>
+        <li>私有知识库问答</li>
+        <li>内容批量生成</li>
+        <li>AI 模型接入集成</li>
+      </ul>
+    </div>
+    <div class="svc">
+      <h3>🎬 视频处理</h3>
+      <div class="price">¥ 150 起</div>
+      <ul>
+        <li>去水印 / 下载</li>
+        <li>格式转换 / 压缩</li>
+        <li>批量剪辑处理</li>
+        <li>字幕提取生成</li>
+      </ul>
+    </div>
+    <div class="svc">
+      <h3>💬 机器人开发</h3>
+      <div class="price">¥ 500 起</div>
+      <ul>
+        <li>飞书 / 微信 / Telegram</li>
+        <li>自动回复 + 关键词</li>
+        <li>定时推送通知</li>
+        <li>企业级集成方案</li>
+      </ul>
+    </div>
+    <div class="svc">
+      <h3>🛠️ 效率工具开发</h3>
+      <div class="price">¥ 300 起</div>
+      <ul>
+        <li>在线工具网站</li>
+        <li>批量文件处理</li>
+        <li>格式转换工具</li>
+        <li>自动化脚本</li>
+      </ul>
+    </div>
+    <div class="svc">
+      <h3>📈 数据报告</h3>
+      <div class="price">¥ 500 起</div>
+      <ul>
+        <li>行业数据分析</li>
+        <li>可视化图表</li>
+        <li>趋势预测</li>
+        <li>PPT / 报告撰写</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>🛠️ 已有开源工具（可直接用）</h2>
+  <div class="tools">
+    <div class="tool"><div class="icon">🛠️</div><div class="name">效率工具箱</div><div class="desc">30+在线工具 · 免费使用</div></div>
+    <div class="tool"><div class="icon">🤖</div><div class="name">AI 工具集</div><div class="desc">翻译/总结/润色 · CLI版</div></div>
+    <div class="tool"><div class="icon">📊</div><div class="name">数据采集器</div><div class="desc">微博/社交平台数据</div></div>
+    <div class="tool"><div class="icon">🎬</div><div class="name">视频工具箱</div><div class="desc">下载/去水印/转码</div></div>
+    <div class="tool"><div class="icon">💬</div><div class="name">机器人框架</div><div class="desc">多平台消息聚合</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>💡 为什么选我</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem">
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center">
+      <div style="font-size:1.5rem">⚡</div>
+      <div style="font-weight:600;margin:0.3rem 0">快速交付</div>
+      <div style="color:var(--muted);font-size:0.8rem">小单当天完成<br>大单分阶段交付</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center">
+      <div style="font-size:1.5rem">🔧</div>
+      <div style="font-weight:600;margin:0.3rem 0">代码开源</div>
+      <div style="color:var(--muted);font-size:0.8rem">交付完整源码<br>无后端锁定</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center">
+      <div style="font-size:1.5rem">💰</div>
+      <div style="font-weight:600;margin:0.3rem 0">满意再付</div>
+      <div style="color:var(--muted);font-size:0.8rem">初稿交付确认<br>不满意不收费</div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center">
+      <div style="font-size:1.5rem">🔄</div>
+      <div style="font-weight:600;margin:0.3rem 0">永久维护</div>
+      <div style="color:var(--muted);font-size:0.8rem">交付后免费维护<br>Bug 终身包修</div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>📞 立即下单 / 咨询</h2>
+  <div class="contact">
+    <h2>告诉我你需要什么</h2>
+    <p>描述你的需求，5分钟内回复报价</p>
+    <div class="contact-form">
+      <div class="form-group"><input type="text" id="name" placeholder="你的称呼（微信/Telegram/邮箱）"></div>
+      <div class="form-group"><input type="text" id="need" placeholder="需要什么？（如：帮我爬取某微博1000条数据）"></div>
+      <div class="form-group"><textarea id="detail" placeholder="详细描述需求：数据范围、格式要求、截止时间等"></textarea></div>
+      <button class="submit" onclick="sendOrder()">🚀 发送需求 →</button>
+      <div class="guarantee">
+        <span>✓ 免费评估</span><span>✓ 5分钟响应</span><span>✓ 满意付款</span><span>✓ 代码开源</span>
+      </div>
+    </div>
+    <div id="feedback" style="display:none;margin-top:1rem;color:var(--success);font-weight:600"></div>
+  </div>
+</div>
+
+</div>
+<footer>
+  <p>GitHub: <a href="https://github.com/050612s" style="color:var(--primary2)">github.com/050612s</a> · 所有工具开源可用</p>
+</footer>
+<script>
+function sendOrder() {
+  const name = document.getElementById('name').value;
+  const need = document.getElementById('need').value;
+  const detail = document.getElementById('detail').value;
+  if (!name || !need) { alert('请填写称呼和需求'); return; }
+  const msg = '📋 新订单！\n\n👤 ' + name + '\n💼 ' + need + '\n📝 ' + (detail||'无');
+  document.getElementById('feedback').innerHTML = '✅ 已收到！复制以下内容联系：\n' + msg.replace(/\n/g,'<br>');
+  document.getElementById('feedback').style.display = 'block';
+  navigator.clipboard.writeText(msg);
+}
+</script>
+</body>
+</html>
